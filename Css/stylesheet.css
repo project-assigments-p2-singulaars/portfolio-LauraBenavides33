@@ -1,0 +1,213 @@
+* {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth !important;
+    font-weight: unset;
+    /* cursor: url('../Media/CURSOR.png'), auto; */
+}
+
+@font-face {
+    font-family: 'HelveticaNeue-UltraLight';
+    src: url(../Fonts/HelveticaNeue-UltraLight.otf);
+}
+
+@font-face {
+    font-family: 'Salina-Trial-Regular';
+    src: url(../Fonts/Salina-Trial-Regular.otf);
+}
+
+@font-face {
+    font-family: 'Salina-Trial-RegularItalic';
+    src: url(../Fonts/Salina-Trial-RegularItalic.otf);
+}
+
+html{
+    scroll-snap-type: y mandatory;
+    transition: 2s;
+}
+.snap-scroll{
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+/* header */
+.logo img {
+    height: 28px;
+    width: 28px;
+}
+
+.logo {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+}
+
+.logo img:hover {
+    opacity: 87%;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 6%;
+    font-family: 'HelveticaNeue-UltraLight';
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    background-color: #EAEAEA;
+
+}
+
+li {
+    font-size: 20px;
+    list-style: none;
+    color: black;
+    text-align: center;
+    padding: 2%;
+}
+
+li a:hover {
+    color: #5f5f5f;
+}
+
+
+/* presentacion del hero*/
+#hola-presentacion {
+    font-family: 'Salina-Trial-RegularItalic';
+    font-size: 80px;
+}
+
+.subtitulo-presentacion {
+    font-family: 'HelveticaNeue-UltraLight';
+    font-size: 2.2vw;
+
+}
+
+#background-img {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    min-width: 100%;
+    max-width: 100%;
+    z-index: -1000;
+}
+
+#foto-perfil {
+    width: 348px;
+    height: 303px;
+    padding-top: 8%;
+}
+
+.presentacion-content {
+    display: flex;
+    justify-content: center;
+    gap: 9%;
+    height: 82vh;
+    background-color: #f9f9f9;
+}
+
+.bienvenida {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8%;
+}
+#slider-arrow{
+    cursor: url('../Media/FLECHA.png'), auto;
+    height: 10vh;
+}
+/*seccion de proyectos*/
+#boton-flecha {
+    width: 40px;
+    display: block;
+    margin: auto;
+}
+
+.seccion-proyectos {
+    background-color: #EAEAEA;
+    height: 105vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.titular-proyectos {
+    font-family: 'Salina-Trial-Regular';
+    font-size: 75px;
+    cursor: pointer;
+}
+.titular-proyectos a{
+    color: black;
+    text-decoration: none;
+}
+.titular-proyectos a:hover {
+    color: #313131;;
+}
+
+.subtitulo-proyectos {
+    font-family: 'HelveticaNeue-UltraLight';
+    font-size: 24px;
+}
+
+/*#region Galeria de proyectos*/
+
+/* galeria de proyectos */
+
+.fila1-imagenes-proyectos{
+    display: flex;
+}
+
+.mockupImg {
+    display: flex;
+    width: 33.33%;
+}
+.mockupImg:hover{
+    opacity: 70%;
+    transition: opacity .5s ease-in-out;
+}
+
+/*#endregion*/
+/* footer*/
+footer {
+    height: 50vh;
+    background-color: #EAEAEA;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+}
+
+.subtitulo-footer{
+    display: flex;
+    gap: 10%;
+    justify-content: center;
+    font-family: 'HelveticaNeue-UltraLight';
+    font-size: 24px;
+}
+.subtitulo-footer a{
+    text-decoration: none;
+    color: black;
+}
+.titular-footer{
+    font-family: 'Salina-Trial-Regular';
+    font-size: 70px;
+    cursor: pointer;
+}
+.titular-footer:hover {
+    color: #313131;;
+}
